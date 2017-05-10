@@ -4,7 +4,7 @@
  * Module dependencies
  */
 
-const crypto = require('crypto')
+crypto = require('crypto')
 
 exports.encrypt = (str, key) => {
   const c = crypto.createCipheriv('aes-128-ecb', convertCryptKey(key), '')
